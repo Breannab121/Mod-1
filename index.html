@@ -19,11 +19,18 @@
     <img src="bear.jpg" alt="Bear"/>
 
     <h2>Contact Us if you see this bear</h2>
-    <ol>
-      <li>Breanna</li>
-      <li>Breanna@gmail.com</li>
-      <li>I am here to help</li>
-    </ol>
+    <form action="/submit" method="POST">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+  
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+  
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+  
+      <input type="submit" value="Send">
+    </form>
 
  <section id="testimonials">
     <h2>What People Are Saying About the Bear</h2>
